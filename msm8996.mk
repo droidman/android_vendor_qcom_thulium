@@ -21,10 +21,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, device/qcom/common/common64.mk)
 
-PRODUCT_NAME := msm8996
-PRODUCT_DEVICE := msm8996
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := MSM8996 for arm64
+PRODUCT_NAME := droidman_oneplus3t
+PRODUCT_DEVICE := oneplus3t
+PRODUCT_BRAND := Oneplus
+PRODUCT_MANUFACTURER := OnePlus
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=OnePlus3T \
+    PRODUCT_NAME=OnePlus3T \
+    BUILD_FINGERPRINT=OnePlus/OnePlus3T/OnePlus3T:6.0.1/MMB29M/362280:user/release-keys \
+    PRIVATE_BUILD_DESC="OnePlus3T-user 6.0.1 MMB29M 24 dev-keys"
+
 
 PRODUCT_BOOT_JARS += tcmiface
 
